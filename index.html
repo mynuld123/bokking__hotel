@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Flex-Box Admin Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="Dream Trip" class="logo" />
+
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search Hotels"
+          />
+
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">10</span>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">77</span>
+          </div>
+
+          <div class="user-nav__user">
+            <img
+              src="img/profile.jpg"
+              alt="Profile Image"
+              class="user-nav__photo"
+            />
+            <span class="user-nav__name">Mainul</span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft"></use>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>Car Rental</span>
+              </a>
+            </li>
+
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">&copy; 20220 - All Rights Reserve.</div>
+        </nav>
+
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="img/hotel-1.jpg" alt="Photo 1" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/hotel-2.jpg" alt="Photo 2" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img src="img/hotel-3.jpg" alt="Photo 3" class="gallery__photo" />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Cox's View</h1>
+
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Cox's Bazar</button>
+            </div>
+
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.7</div>
+              <div class="overview__rating-count">490 votes</div>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+                magnam adipisci consectetur sequi nam aut impedit blanditiis
+                itaque voluptatum esse. Amet minima, temporibus explicabo, error
+                velit porro debitis ipsum assumenda consequuntur soluta dicta
+                laborum natus ipsa possimus! Labore mollitia totam consectetur
+                excepturi corporis reiciendis ipsa quo rerum! Facere aperiam
+                consectetur, sunt maxime ad fuga velit?
+              </p>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consectetur minima minus rerum, reprehenderit porro ad corrupti?
+                Molestias eos quas temporibus dolorem impedit? Tempore cum odio
+                soluta facere perspiciatis quis repellat.
+              </p>
+
+              <ul class="list">
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li class="list__item">
+                  <svg class="list__item-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-chevron-small-right"
+                    ></use>
+                  </svg>
+                  Lorem ipsum dolor sit amet.
+                </li>
+              </ul>
+
+              <div class="recommend">
+                <p class="recommend__count">
+                  Ali and 3 other friends recommend this hotel.
+                </p>
+
+                <div class="recommend__friends">
+                  <img
+                    src="img/person-1.jpg"
+                    alt="Profile Photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/person-2.jpg"
+                    alt="Profile Photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/person-3.jpg"
+                    alt="Profile Photo"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/person-4.jpg"
+                    alt="Profile Photo"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+                  expedita excepturi voluptatem ea, aut autem aliquid et omnis
+                  beatae ducimus!
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User-1"
+                    class="review__photo"
+                  />
+
+                  <div class="review__user-box">
+                    <p class="review__user-name">John Smith</p>
+                    <p class="review__user-date">Nov 2nd, 2020</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Excepturi dolore eligendi nostrum inventore, a quod.
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User-1"
+                    class="review__photo"
+                  />
+
+                  <div class="review__user-box">
+                    <p class="review__user-name">Sara Smith</p>
+                    <p class="review__user-date">Nov 2nd, 2020</p>
+                  </div>
+                  <div class="review__rating">7.8</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">Show All <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Good news! We have 4 free rooms for your selected dates!
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Book Now</span>
+              <span class="btn__invisible">Only 4 rooms left</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
